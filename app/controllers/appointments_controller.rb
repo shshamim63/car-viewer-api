@@ -16,6 +16,16 @@ class AppointmentsController < ApplicationController
   end
 
   def create
-    
+    if @current_user
+      appointment = @current_user.appointments.build(car_id: params[:car_id], date: params[:date],                                                    time: params[:time], city: params[:city])
+      if appointment.save
+        render json: {
+          status: :created,
+          appointment: appointment
+        }
+      else
+        render json: {status: 200}
+      end
+    end
   end
 end
