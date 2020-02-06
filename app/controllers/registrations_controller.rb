@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class RegistrationsController < ApplicationController
   def create
     user = User.create!(username: params['user']['username'],
@@ -9,7 +11,7 @@ class RegistrationsController < ApplicationController
       render json: {
         status: :created,
         logged_in: true,
-        user: user,
+        user: user
       }
     else
       render json: { status: 500 }

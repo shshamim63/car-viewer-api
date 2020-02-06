@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CarsController < ApplicationController
   def create
     car = Car.create!(modelname: params[:modelname],
@@ -9,7 +11,7 @@ class CarsController < ApplicationController
     if car
       render json: {
         status: :created,
-        car: car,
+        car: car
       }
     else
       render json: { status: 500 }
