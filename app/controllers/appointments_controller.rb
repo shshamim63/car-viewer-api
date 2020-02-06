@@ -9,6 +9,8 @@ class AppointmentsController < ApplicationController
           status: 404
         }
       end
+    else
+      render json: { logged_in: false }
     end
   end
 
@@ -23,6 +25,8 @@ class AppointmentsController < ApplicationController
       else
         render json: {status: 200}
       end
+    else
+      render json: { logged_in: false }
     end
   end
 end
