@@ -23,6 +23,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bcrypt', '~> 3.1.7'
 gem 'rack-cors', :require => 'rack/cors'
 gem 'rubocop'
+gem "factory_bot_rails"
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
