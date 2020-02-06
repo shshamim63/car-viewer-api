@@ -18,24 +18,17 @@ class CarsController < ApplicationController
 
   def index
     cars = Car.all
-    render json: {
-      status: :created,
-      cars: cars
-    }
+    render json: cars
   end
 
   def show
     car = Car.find(params[:id])
     if car
-      render json: {
-        status: :fetched,
-        car: car
-      }
+      render json: car
     else
       render json: {
         status: 404
       }
     end
   end
-
 end

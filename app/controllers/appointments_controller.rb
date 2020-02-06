@@ -3,10 +3,7 @@ class AppointmentsController < ApplicationController
     if @current_user
       appointments = @current_user.appointments.order("created_at DESC").joins(:cars)
       if appointments
-        render json: {
-          status: :created,
-          appointments: appointments
-        }
+        render json: appointments
       else
         render json: {
           status: 404
