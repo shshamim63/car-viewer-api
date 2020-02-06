@@ -12,14 +12,12 @@ RSpec.describe CarsController, type: :controller do
       subject
       cars.each_with_index do |car, index|
         expect(json_data[index]['attributes']).to eq(
-          {
             'modelname' => car.modelname,
             'fee' => car.fee,
             'payable' => car.payable,
             'duration' => car.duration,
             'representative' => car.representative,
             'description' => car.description
-          }
         )
       end
     end
@@ -37,12 +35,12 @@ RSpec.describe CarsController, type: :controller do
     it 'should return proper json' do
       subject
       expect(json_data['attributes']).to eq(
-        "modelname" => car.modelname,
-        "fee"=> car.fee,
-        "payable"=> car.payable,
-        "duration"=> car.duration,
-        "representative"=> car.representative,
-        "description"=> car.description
+        'modelname' => car.modelname,
+        'fee' => car.fee,
+        'payable' => car.payable,
+        'duration' => car.duration,
+        'representative' => car.representative,
+        'description' => car.description
       )
     end
   end

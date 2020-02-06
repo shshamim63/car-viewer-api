@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class Car < ApplicationRecord
   validates :modelname, presence: true
   validates :fee, presence: true

@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class AppointmentsController < ApplicationController
   def index
     if @current_user
@@ -18,7 +16,11 @@ class AppointmentsController < ApplicationController
 
   def create
     if @current_user
-      appointment = @current_user.appointments.build(car_id: params[:car_id], date: params[:date],   time: params[:time], city: params[:city])
+      appointment = @current_user.appointments
+      .build(car_id: params[:car_id], 
+      date: params[:date], 
+      time: params[:time],
+      city: params[:city])
       if appointment.save
         render json: {
           status: :created,

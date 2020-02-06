@@ -5,6 +5,6 @@ FactoryBot.define do
     payable { 295 }
     duration { 2 }
     representative { 'Seller' }
-    description {'Ducimus mollitia deserunt. Dicta et corporis.'}
+    description { 'Ducimus mollitia deserunt. Dicta et corporis.' }
   end
 end

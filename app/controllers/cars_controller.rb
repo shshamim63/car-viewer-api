@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class CarsController < ApplicationController
   def create
     car = Car.create!(modelname: params[:modelname],
