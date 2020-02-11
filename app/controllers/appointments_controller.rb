@@ -1,7 +1,8 @@
 class AppointmentsController < ApplicationController
+  include CurrentUserConcern
   def index
     if @current_user
-      appointments = @current_user.appointments.order('created_at DESC').joins(:cars)
+      appointments = @current_user.appointments.order('created_at DESC').joins(:car)
       if appointments
         render json: appointments
       else
