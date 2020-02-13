@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
         user: user
       }
     else
-      render json: { status: 401 }
+      render json: { status: 401 }, serializer: nil
     end
   end
 
@@ -28,6 +28,7 @@ class SessionsController < ApplicationController
   end
 
   def logout
+    puts session
     reset_session
     render json: {
       status: 200,
