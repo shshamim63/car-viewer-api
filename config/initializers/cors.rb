@@ -9,7 +9,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
   end
   
   allow do
-    origins 'https://car-official.herokuapp.com'
+    origins 'https://car-viewer.netlify.com'
 
     resource '*',
     headers: :any,
