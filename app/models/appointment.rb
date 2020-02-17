@@ -5,5 +5,5 @@ class Appointment < ApplicationRecord
   belongs_to :user
   belongs_to :car
 
-  scope :recent, -> { order(created_at: :desc)}
+  scope :recent, -> { order(created_at: :desc) }
 end
