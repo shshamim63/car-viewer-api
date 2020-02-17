@@ -1,7 +1,8 @@
 class AppointmentsController < ApplicationController
+  include CurrentUserConcern
   def index
     if @current_user
-      appointments = @current_user.appointments.order('created_at DESC').joins(:cars)
+      appointments = @current_user.appointments.recent.joins(:car)
       if appointments
         render json: appointments
       else
@@ -16,11 +17,7 @@ class AppointmentsController < ApplicationController
 
   def create
     if @current_user
-      appointment = @current_user.appointments
-        .build(car_id: params[:car_id],
-               date: params[:date],
-               time: params[:time],
-               city: params[:city])
+      appointment = @current_user.appointments.build(appointment_params)
       if appointment.save
         render json: {
           status: :created,
@@ -32,5 +29,13 @@ class AppointmentsController < ApplicationController
     else
       render json: { logged_in: false }
     end
+  end
+
+  private
+
+  def appointment_params
+    params.require(:data).require(:attributes)
+      .permit(:date, :time, :city, :car_id) ||
+      ActionController::Parameters.new
   end
 end
