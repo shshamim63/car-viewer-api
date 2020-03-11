@@ -20,7 +20,7 @@ An API(Application Program Interface) build with Ruby on Rails. Based on users r
 - [License](#license)
 
 ## What_It_Does?
-```
+
 1. Takes username, email, password to register a user.
 2. User authentication cover by taking email and password.
 3. Renders a list of cars with related informations. Such as,
@@ -32,26 +32,30 @@ An API(Application Program Interface) build with Ruby on Rails. Based on users r
 4. Users appointment info.
 5. Details of a specific car model.
 
-```
 ## Built_With
-```
+
 1. Ruby [Version]- 2.7.0p0
 2. Rails [Version]- 6.0.2.1
-```
+
 ## Install
 
-```
 1. Clone the repository, `git clone git@github.com:shshamim63/car-viewer-api.git`
 2. Get into the project directory `cd car-viewer-api`.
 3. Run `bundle install` to install the gem.
 4. To run the surver `rails s -p 3001`.
-```
 
 ## API
+
 The live version of the api in [here](https://car-viewer-api.herokuapp.com/)
+
 ## Maintainers
 
-[@Shakhawat Hossain](https://github.com/shshamim63)
+👤 **Shakhawat Hossain**
+
+- Github: [@shshamim63](https://github.com/shshamim63)
+- LinkedIn: [@shakhawathossainshamim](https://www.linkedin.com/in/shakhawathossainshamim/)
+- Twitter: [@Shshamim090](https://twitter.com/Shshamim090)
+
 
 ## Contributing
 
