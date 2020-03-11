@@ -23,12 +23,12 @@ An API(Application Program Interface) build with Ruby on Rails. Based on users r
 
 1. Takes username, email, password to register a user.
 2. User authentication cover by taking email and password.
-3. Renders a list of cars with related informations. Such as,
-..1. Car model
-..2. Price
-..3. Payable price
-..4. Minimum deposit to test a car
-..5. Representative name
+3. Renders a list of cars with related informations. Such as,<br>
+..1. Car model<br>
+..2. Price<br>
+..3. Payable price<br>
+..4. Minimum deposit to test a car<br>
+..5. Representative name<br>
 4. Users appointment info.
 5. Details of a specific car model.
 
