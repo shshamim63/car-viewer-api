@@ -10,32 +10,33 @@ An API(Application Program Interface) build with Ruby on Rails. Based on users r
 
 ## Table of Contents
 
-- [What_It_Does?](#What_It_Does?)
-- [Built_With](#Built_With)
+- [What It Does?](#what-it-does?)
+- [Background](#background)
 - [Install](#install)
 - [Usage](#usage)
 - [API](#api)
+- [Useage](#useage)
 - [Maintainers](#maintainers)
 - [Contributing](#contributing)
 - [License](#license)
 
-## What_It_Does?
+## What It Does?
 
 1. Takes username, email, password to register a user.
-2. User authentication cover by taking email and password.
+2. User authentication coverd by taking email and password.
 3. Renders a list of cars with related informations. Such as,<br>
-..1. Car model<br>
-..2. Price<br>
-..3. Payable price<br>
-..4. Minimum deposit to test a car<br>
-..5. Representative name<br>
+    - Car model<br>
+    - Price<br>
+    - Payable price<br>
+    - Minimum deposit to test a car<br>
+    - Representative name<br>
 4. Users appointment info.
 5. Details of a specific car model.
 
-## Built_With
+## Background
 
-1. Ruby [Version]- 2.7.0p0
-2. Rails [Version]- 6.0.2.1
+- Ruby [Version]- 2.7.0p0
+- Rails [Version]- 6.0.2.1
 
 ## Install
 
@@ -48,6 +49,10 @@ An API(Application Program Interface) build with Ruby on Rails. Based on users r
 
 The live version of the api in [here](https://car-viewer-api.herokuapp.com/)
 
+## Useage
+
+Checkout the [this](https://github.com/shshamim63/car-viewer-react) repository where I have isued this api.
+
 ## Maintainers
 
 👤 **Shakhawat Hossain**
@@ -59,7 +64,12 @@ The live version of the api in [here](https://car-viewer-api.herokuapp.com/)
 
 ## Contributing
 
-PRs accepted.
+**Always welcome to contribute if you want to make it better.**
+1. Fork it (https://github.com/shshamim63/car-viewer-api)
+2. Create your feature branch (git checkout -b feature/[choose-a-name])
+3. Commit your changes (git commit -am 'what this commit will fix/add')
+4. Push the branch (git push origin feature/[chosen-name])
+5. Create a new Pull Request
 
 Small note: If editing the README, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
 
