@@ -2,7 +2,6 @@ class AppointmentsController < ApplicationController
   include CurrentUserConcern
   def index
     if @current_user
-      print "the current user is #{@current_user}"
       appointments = @current_user.appointments.recent.joins(:car)
       if appointments
         render json: appointments
@@ -23,7 +22,7 @@ class AppointmentsController < ApplicationController
         appointments = @current_user.appointments.recent.joins(:car)
         render json: {
           status: :created,
-          appointment: appointments
+          appointments: appointments
         }
       else
         render json: { status: 200 }
