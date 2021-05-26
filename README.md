@@ -43,7 +43,7 @@ An API(Application Program Interface) build with Ruby on Rails. Based on users r
 1. Clone the repository, `git clone git@github.com:shshamim63/car-viewer-api.git`
 2. Get into the project directory `cd car-viewer-api`.
 3. Run `bundle install` to install the gem.
-4. To run the surver `rails s -p 3001`.
+4. To run the server `rails s -p 3001`.
 
 ## API
 
